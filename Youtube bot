@@ -1,0 +1,10 @@
+import webbrowser
+import time
+import random
+
+while True:
+    sites = random.choice(['youtube.com/watch?v=P9xo2ASXdgk', 'youtube.com/watch?v=dqNB7yuS0Zw', 'youtube.com/watch?v=YPCpcDPpmpw', 'youtube.com/watch?v=WlC_t6zR_D8', 'youtube.com/watch?v=Zck2l8H7ifE', 'youtube.com/watch?v=rfsqEO-WQHc', 'youtube.com/watch?v=DueNNrcXTww'])
+    visit = "http://{}".format(sites)
+    webbrowser.open(visit)
+    seconds = random.randrange(5, 20)
+    time.sleep(seconds)
